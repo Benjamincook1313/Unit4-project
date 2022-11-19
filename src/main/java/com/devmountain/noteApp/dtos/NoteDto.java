@@ -1,6 +1,6 @@
-package com.devmountain.noteApp.noteApp.dtos;
+package com.devmountain.noteApp.dtos;
 
-import com.devmountain.noteApp.noteApp.entities.Note;
+import com.devmountain.noteApp.entities.Note;
 import lombok.*;
 
 import java.io.Serializable;
@@ -10,7 +10,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class NoteDto implements Serializable {
-  private long id;
+  private Long id;
   private String body;
   private UserDto userDto;
 

@@ -1,4 +1,4 @@
-package com.devmountain.noteApp.noteApp.entities;
+package com.devmountain.noteApp.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
@@ -16,7 +16,7 @@ import javax.persistence.*;
 public class Note {
   @Id
   @GeneratedValue
-  private long id;
+  private Long id;
   @Column(columnDefinition = "text")
   private String body;
 

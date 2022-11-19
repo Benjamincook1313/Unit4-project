@@ -1,5 +1,6 @@
-package com.devmountain.noteApp.noteApp.entities;
+package com.devmountain.noteApp.entities;
 
+import com.devmountain.noteApp.entities.Note;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

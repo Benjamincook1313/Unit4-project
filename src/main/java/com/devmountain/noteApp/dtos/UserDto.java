@@ -1,7 +1,7 @@
-package com.devmountain.noteApp.noteApp.dtos;
+package com.devmountain.noteApp.dtos;
 
-import com.devmountain.noteApp.noteApp.entities.Note;
-import com.devmountain.noteApp.noteApp.entities.User;
+import com.devmountain.noteApp.entities.Note;
+import com.devmountain.noteApp.entities.User;
 
 import java.io.Serializable;
 import java.util.HashSet;
