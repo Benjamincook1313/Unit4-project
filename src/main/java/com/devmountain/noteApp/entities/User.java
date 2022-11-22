@@ -1,6 +1,6 @@
 package com.devmountain.noteApp.entities;
 
-import com.devmountain.noteApp.entities.Note;
+import com.devmountain.noteApp.dtos.UserDto;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,8 +27,8 @@ public class User {
   @JsonManagedReference
   private Set<Note> noteSet = new HashSet<>();
 
-  public User(String username, String password) {
-    this.username = username;
-    this.password = password;
+  public User(UserDto userDto) {
+    if(userDto.getUsername() != null) this.username = userDto.getUsername();
+    if(userDto.getPassword() != null) this.password = userDto.getPassword();
   }
 }
