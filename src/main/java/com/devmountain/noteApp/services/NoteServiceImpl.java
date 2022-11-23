@@ -67,6 +67,8 @@ public class NoteServiceImpl implements NoteService {
       return Optional.of(new NoteDto(noteOptional.get()));
     }
     return Optional.empty();
+
+//    return noteOptional.map(NoteDto::new);
   }
 
 }
